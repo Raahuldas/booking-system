@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facility Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Facility Booking System</h1>
+  <div id="booking-form">
+    <label for="facility">Facility:</label>
+    <select id="facility">
+      <option value="Clubhouse">Clubhouse</option>
+      <option value="Tennis Court">Tennis Court</option>
+    </select><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date"><br>
+    <label for="start-time">Start Time:</label>
+    <input type="time" id="start-time"><br>
+    <label for="end-time">End Time:</label>
+    <input type="time" id="end-time"><br>
+    <button onclick="bookFacility()">Book Facility</button>
+  </div>
+  <div id="booking-status"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
